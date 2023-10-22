@@ -14,17 +14,17 @@ async function createWindow() {
     const preload = join(__dirname, '../preload/index.js')
 
     window = new BrowserWindow({
-        width: 1000,
+        width: 1320,
         height: 800,
-        minWidth: 1000,
-        minHeight: 800, // Remove this line if you WANT it to be resizable
-        maxWidth: 1000, // Remove this line if you WANT it to be resizable
-        maxHeight: 800, // Remove this line if you WANT it to be resizable
+        minWidth: 1320,
+        minHeight: 800,
+        maxWidth: 1320,
+        maxHeight: 800,
         frame: true,
         transparent: false,
         show: true,
         webPreferences: {
-            devTools: false,
+            devTools: true,
             preload,
             sandbox: false,
             nodeIntegration: true,
